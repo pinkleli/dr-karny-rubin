@@ -1,5 +1,10 @@
 :host {
   header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
     padding: 12px 80px;
     font-size: 18px;
     font-weight: 400;
