@@ -1,0 +1,18 @@
+:host {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 80px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 0;
+    list-style: none;
+  }
+}

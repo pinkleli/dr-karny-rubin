@@ -1,0 +1,10 @@
+<header>
+  <div><i>ד״ר קרני רובין, M.D. M.Sc. B.Sc. - פסיכיאטרית</i></div>
+  <nav>
+    <ul>
+      <li *ngFor="let item of items">
+        <a [href]="item.link">{{ item.title }}</a>
+      </li>
+    </ul>
+  </nav>
+</header>
