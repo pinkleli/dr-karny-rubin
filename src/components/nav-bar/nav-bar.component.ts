@@ -9,15 +9,15 @@ export class NavBarComponent {
   public items = [
     {
       title: 'דף הבית',
-      link: '/',
+      link: '',
     },
     {
       title: 'אודותי',
-      link: '/אודותי',
+      link: 'אודותי',
     },
     {
       title: 'מאמרים',
-      link: '/מאמרים',
+      link: 'מאמרים',
     },
   ];
 }
