@@ -23,10 +23,10 @@ const routes: Routes = [
         (m) => m.PublicationsModule,
       ),
   },
-  {
-    path: '**',
-    redirectTo: '',
-  },
+  // {
+  //   path: '**',
+  //   redirectTo: '',
+  // },
 ];
 
 @NgModule({
