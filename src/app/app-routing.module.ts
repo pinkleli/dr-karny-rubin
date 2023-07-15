@@ -10,7 +10,7 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'אודותי',
+    path: 'אודותיי',
     loadChildren: () =>
       import('../modules/about-me/about-me.module').then(
         (m) => m.AboutMeModule,

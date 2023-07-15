@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,18 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss'],
 })
 export class NavBarComponent {
+  @Input() scope: string = '';
   public items = [
     {
       title: 'דף הבית',
       link: '',
+      scope: 'home'
     },
     {
-      title: 'אודותי',
-      link: 'אודותי',
+      title: 'אודותיי',
+      link: 'אודותיי',
+      scope: 'about'
     },
     {
       title: 'מאמרים',
       link: 'מאמרים',
+      scope: 'publications'
     },
   ];
+
+  public messageMe(): void {
+    window.open('https://wa.me/972503242021')
+  }
 }

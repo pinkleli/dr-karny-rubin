@@ -1,18 +1,53 @@
 :host {
   header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 80px;
+    padding: 12px 80px;
     font-size: 18px;
     font-weight: 400;
-  }
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    margin: 0;
-    list-style: none;
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      margin: 0;
+      list-style: none;
+
+      a, a:visited {
+        text-decoration: none;
+        color: #2F2F2E;
+      }
+    }
+
+    .selected {
+      color: #71A39A !important;
+    }
+
+    .button {
+      align-self: flex-end;
+
+      button {
+        font-family: "Open Sans", sans-serif;
+        background-color: #CFF4EC;
+        border: none;
+        color: #2F2F2E;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        margin-bottom: 12px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #4D7369;
+        color: white;
+        transition: background-color 0.4s ease 0s;
+      }
+    }
   }
 }
