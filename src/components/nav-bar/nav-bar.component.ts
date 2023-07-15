@@ -11,21 +11,21 @@ export class NavBarComponent {
     {
       title: 'דף הבית',
       link: '',
-      scope: 'home'
+      scope: 'home',
     },
     {
       title: 'אודותיי',
       link: 'אודותיי',
-      scope: 'about'
+      scope: 'about',
     },
     {
       title: 'מאמרים',
       link: 'מאמרים',
-      scope: 'publications'
+      scope: 'publications',
     },
   ];
 
   public messageMe(): void {
-    window.open('https://wa.me/972503242021')
+    window.open('https://wa.me/972503242021');
   }
 }

@@ -1,14 +1,20 @@
 <header>
   <div class="header">
-    <div> </div>
-    <div class="button"><button type="button" (click)="messageMe()">כתבו לי בווטסאפ</button></div>
+    <div></div>
+    <div class="button">
+      <button type="button" (click)="messageMe()">כתבו לי בווטסאפ</button>
+    </div>
   </div>
   <div class="header">
     <div><i>דר' קרני רובין, .M.D. M.Sc. B.Sc - פסיכיאטרית</i></div>
     <nav>
       <ul>
         <li *ngFor="let item of items">
-          <a [href]="item.link" [ngClass]="{'selected' : item.scope === scope}">{{ item.title }}</a>
+          <a
+            [href]="item.link"
+            [ngClass]="{ selected: item.scope === scope }"
+            >{{ item.title }}</a
+          >
         </li>
       </ul>
     </nav>
